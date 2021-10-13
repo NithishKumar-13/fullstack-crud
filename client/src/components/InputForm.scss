@@ -1,0 +1,33 @@
+.form {
+    padding: 1rem;
+    padding-right: 0;
+    background: #fff;
+    width: 90rem;
+    margin: 4rem auto;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+
+    &__input {
+        border: none;
+        border-bottom: 1px solid #daa;
+        
+        &:focus {
+            outline: none;
+        }
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+
+    &__btn {
+        margin-left: auto;
+        all: unset;
+        background: darken(#DE6262, 5);
+        padding: .2rem 1.4rem;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+}

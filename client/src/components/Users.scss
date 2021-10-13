@@ -1,0 +1,36 @@
+.users {
+    flex-basis: 60%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+    gap: 3rem;
+    align-self: flex-start;
+
+    &__card {
+        background: #fff;
+        padding: 1rem;
+        min-height: 17rem;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    &__description > span {
+        font-weight: 600;
+        margin-right: .5rem;
+    }
+
+    &__btn {
+        all: unset;
+        display: block;
+        position: absolute;
+        bottom: 5%;
+        right: 10%;
+        border: 1px solid #DE6262;
+        padding: .2rem 1rem;
+        font-size: 1.4rem;
+
+        &:hover {
+            background: #DE6262;
+            color: #fff;
+        }
+    }
+}

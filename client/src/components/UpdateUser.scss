@@ -1,0 +1,33 @@
+.update-user {
+    align-self: flex-start;
+    background: #fff;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+    &__input {
+        border: none;
+        border-bottom: 1px solid #daa;
+        
+        &:focus {
+            outline: none;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__btn {
+        all: unset;
+        margin-top: auto;
+        background: darken(#DE6262, 5);
+        color: #fff;
+        padding: .3rem 1rem;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+}
